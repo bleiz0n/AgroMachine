@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Agromachine</title>
+    <!-- meta -->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="fontawesome/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <!-- Estilo personal -->
+    <link type="text/css" rel="stylesheet" href="css/estilo.css" />
+    <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+    <script src="jquery/jquery-1.11.0.min.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    
+    <!-- Scripts -->
+    <script type="text/javascript" src="js/objetos.js"></script>
+    <script type="text/javascript" src="js/codigo.js"></script>
+</head>
+<body>
+
+<div id="logo" class="col-sm-12">
+    <img  src="images/logo.jpg" class="img-responsive"/>
+</div>
+<div id="mostrar" class="container">
+	<div id="gestion" class="col-sm-12 col-xs-12">
+	<div class="row" style="margin:0;padding:0;">
+	    <div id="gestionClientes" class="col-sm-3 col-xs-12 text-center">
+	    	<i class="fa fa-user col-sm-12 col-xs-2"></i>
+	    	<span class="tituloGestion col-sm-12 col-xs-10">Clientes</span>
+	    	<div class="capaBotones">
+	    	<button type="button" class="btn btn-success btn-xs col-sm-offset-2 col-sm-2 col-xs-offset-1 col-xs-2">
+	    		<span class="glyphicon glyphicon-plus-sign"></span>
+	    	</button>
+	    	<button type="button" class="btn btn-danger btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-remove-sign"></span>
+    		</button>
+	    	<button type="button" class="btn btn-primary btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-edit"></span>
+    		</button>
+	    	<button type="button" class="btn btn-warning btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-list-alt"></span>
+    		</button>
+    		</div>
+	    </div>
+	    <div id="gestionMaquinarias" class="col-sm-3 col-xs-12 text-center">
+	    	<i class="fa fa-cog col-sm-12 col-xs-2"></i>
+	    	<span class="tituloGestion col-sm-12 col-xs-10">Maquinarias</span>
+	    	<div class="capaBotones">
+	    	<button type="button" class="btn btn-success btn-xs col-sm-offset-2 col-sm-2 col-xs-offset-1 col-xs-2">
+	    		<span class="glyphicon glyphicon-plus-sign"></span>
+	    	</button>
+	    	<button type="button" class="btn btn-danger btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-remove-sign"></span>
+    		</button>
+	    	<button type="button" class="btn btn-primary btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-edit"></span>
+    		</button>
+	    	<button type="button" class="btn btn-warning btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-list-alt"></span>
+    		</button>
+			</div>
+	    </div>
+	    <div id="gestionEmpleados" class="col-sm-3 col-xs-12 text-center">
+	    	<i class="fa fa-address-book-o col-sm-12 col-xs-2"></i>
+	    	<span class="tituloGestion col-sm-12 col-xs-10">Empleados</span>
+			<div class="capaBotones">
+	    	<button type="button" class="btn btn-success btn-xs col-sm-offset-2 col-sm-2 col-xs-offset-1 col-xs-2">
+	    		<span class="glyphicon glyphicon-plus-sign"></span>
+	    	</button>
+	    	<button type="button" class="btn btn-danger btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-remove-sign"></span>
+    		</button>
+	    	<button type="button" class="btn btn-primary btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-edit"></span>
+    		</button>
+	    	<button type="button" class="btn btn-warning btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-list-alt"></span>
+    		</button>
+			</div>
+	    </div>
+	    <div id="gestionProveedores" class="col-sm-3 col-xs-12 text-center">
+	    	<i class="fa fa-truck col-sm-12 col-xs-2"></i>
+	    	<span class="tituloGestion col-sm-12 col-xs-10">Proveedores</span>
+			<div class="capaBotones">
+	    	<button type="button" class="btn btn-success btn-xs col-sm-offset-2 col-sm-2 col-xs-offset-1 col-xs-2">
+	    		<span class="glyphicon glyphicon-plus-sign"></span>
+	    	</button>
+	    	<button type="button" class="btn btn-danger btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-remove-sign"></span>
+    		</button>
+	    	<button type="button" class="btn btn-primary btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-edit"></span>
+    		</button>
+	    	<button type="button" class="btn btn-warning btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-list-alt"></span>
+    		</button>
+			</div>
+	    </div>
+	</div>
+	<div class="row" style="margin:0;padding:0;">
+	    <div id="gestionCompras" class="col-sm-3 col-xs-12 text-center">
+	    	<i class="fa fa-shopping-cart col-sm-12 col-xs-2"></i>
+	    	<span class="boton tituloGestion col-sm-12 col-xs-10">Compras</span>
+			<div class="capaBotones">
+	    	<button type="button" class="btn btn-success btn-xs col-sm-offset-2 col-sm-2 col-xs-offset-1 col-xs-2">
+	    		<span class="glyphicon glyphicon-plus-sign"></span>
+	    	</button>
+	    	<button type="button" class="btn btn-danger btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-remove-sign"></span>
+    		</button>
+	    	<button type="button" class="btn btn-primary btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-edit"></span>
+    		</button>
+	    	<button type="button" class="btn btn-warning btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-list-alt"></span>
+    		</button>
+			</div>
+	    </div>
+	    <div id="gestionAlquileres" class="col-sm-3 col-xs-12 text-center">
+	    	<i class="fa fa-key col-sm-12 col-xs-2"></i>
+	    	<span class="tituloGestion col-sm-12 col-xs-10">Alquileres</span>
+			<div class="capaBotones">
+	    	<button type="button" class="btn btn-success btn-xs col-sm-offset-2 col-sm-2 col-xs-offset-1 col-xs-2">
+	    		<span class="glyphicon glyphicon-plus-sign"></span>
+	    	</button>
+	    	<button type="button" class="btn btn-danger btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-remove-sign"></span>
+    		</button>
+	    	<button type="button" class="btn btn-primary btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-edit"></span>
+    		</button>
+	    	<button type="button" class="btn btn-warning btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-list-alt"></span>
+    		</button>
+			</div>
+	    </div>
+	    <div id="gestionIncidencias" class="col-sm-3 col-xs-12 text-center">
+	    	<i class="fa fa-legal col-sm-12 col-xs-2"></i>
+	    	<span class="tituloGestion col-sm-12 col-xs-10">Incidencias</span>
+			<div class="capaBotones">
+	    	<button type="button" class="btn btn-success btn-xs col-sm-offset-2 col-sm-2 col-xs-offset-1 col-xs-2">
+	    		<span class="glyphicon glyphicon-plus-sign"></span>
+	    	</button>
+	    	<button type="button" class="btn btn-danger btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-remove-sign"></span>
+    		</button>
+	    	<button type="button" class="btn btn-primary btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-edit"></span>
+    		</button>
+	    	<button type="button" class="btn btn-warning btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-list-alt"></span>
+    		</button>
+			</div>
+	    </div>
+	    <div id="gestionDocumentos" class="col-sm-3 col-xs-12 text-center">
+    		<i class="fa fa-file-text-o col-sm-12 col-xs-2"></i>
+	    	<span class="tituloGestion col-sm-12 col-xs-10">Documentos</span>
+			<div class="capaBotones"> <!--col-sm-12 col-xs-10" -->
+	    	<button type="button" class="btn btn-success btn-xs col-sm-offset-1 col-sm-2 col-xs-2">
+	    		<span>GIT</span>
+	    	</button>
+	    	<button type="button" class="btn btn-danger btn-xs col-sm-2 col-xs-2">
+	    		<span>UML</span>
+    		</button>
+	    	<button type="button" class="btn btn-primary btn-xs col-sm-2 col-xs-2">
+	    		<span>DOC</span>
+    		</button>
+	    	<button type="button" class="btn btn-info btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-globe"></span>
+    		</button>
+	    	<button type="button" class="btn btn-warning btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-download"></span>
+    		</button>
+			</div>
+	    </div>
+    </div>
+</div>
+    
+    <div id="altaCliente">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Alta de Cliente</h1>
+        <form role="form" name="formAltaCliente" id="formAltaCliente" class="col-sm-offset-2 col-sm-8">
+            <div class="form-group">
+                <label for="dniCliente">DNI:</label>
+                <input type="text" class="form-control" id="dniCliente" name="dniCliente" placeholder="Introduce DNI">
+            </div>
+            <div class="form-group">
+                <label for="nombreCliente">Nombre:</label>
+                <input type="text" class="form-control" id="nombreCliente" name="nombreCliente" placeholder="Introduce nombre">
+            </div>
+            <div class="form-group">
+                <label for="apellidosCliente">Apellidos:</label>
+                <input type="text" class="form-control" id="apellidosCliente" name="apellidosCliente" placeholder="Introduce apellidos">
+            </div>
+            <div class="form-group">
+                <label for="direccionCliente">Dirección:</label>
+                <input type="text" class="form-control" id="direccionCliente" name="direccionCliente" placeholder="Introduce dirección">
+            </div>
+            <div class="form-group">
+                <label for="localidadCliente">Localidad:</label>
+                <input type="text" class="form-control" id="localidadCliente" name="localidadCliente" placeholder="Introduce localidad">
+            </div>
+            <div class="form-group">
+                <label for="cpCliente">Código Postal:</label>
+                <input type="number" min="00001" max="99999" class="form-control" id="cpCliente" name="cpCliente" placeholder="Introduce código postal">
+            </div>
+            <div class="form-group">
+                <label for="telefonoCliente">Teléfono</label>
+                <input type="number" class="form-control" id="telefonoCliente" name="telefonoCliente" min="600000000" max="999999999" placeholder="Introduce nº de teléfono">
+            </div>
+
+
+            <div class="text-center">
+                <button type="button" name="volver" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="reset" class="btn btn-default btn-sm btn-danger">Limpiar</button>
+                <button type="button" name="envioCliente" class="btn btn-default btn-sm btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+    
+    <div id="bajaCliente">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Baja de Cliente</h1>
+        <form role="form" name="formBajaCliente" id="formBajaCliente" class="col-sm-offset-2 col-sm-8">
+            <div class="form-group">
+                <label for="clienteBaja">Cliente</label>
+                <select class="form-control" id="clienteBaja">
+                    <option>Selecciona Cliente para dar de baja</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nombreCliente">Nombre:</label>
+                <input type="text" class="form-control" id="nombreCliente" name="nombreCliente" placeholder="Introduce nombre" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="apellidosCliente">Apellidos:</label>
+                <input type="text" class="form-control" id="apellidosCliente" name="apellidosCliente" placeholder="Introduce apellidos" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="direccionCliente">Dirección:</label>
+                <input type="text" class="form-control" id="direccionCliente" name="direccionCliente" placeholder="Introduce dirección" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="localidadCliente">Localidad:</label>
+                <input type="text" class="form-control" id="localidadCliente" name="localidadCliente" placeholder="Introduce localidad" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="cpCliente">Código Postal:</label>
+                <input type="number" min="00001" max="99999" class="form-control" id="cpCliente" name="cpCliente" placeholder="Introduce código postal" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="telefonoCliente">Teléfono</label>
+                <input type="number" class="form-control" id="telefonoCliente" name="telefonoCliente" min="600000000" max="999999999" placeholder="Introduce nº de teléfono" disabled="disabled">
+            </div>
+
+
+            <div class="text-center">
+                <button type="button" name="volver" id="btnVolverBajaCliente" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="reset" class="btn btn-default btn-sm btn-danger">Limpiar</button>
+                <button type="button" name="envioCliente" class="btn btn-default btn-sm btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+    
+    <div id="modificaCliente">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Modificar Cliente</h1>
+        <form role="form" name="formModificaCliente" id="formModificaCliente" class="col-sm-offset-2 col-sm-8">
+            <div class="form-group">
+                <label for="clienteModifica">Cliente</label>
+                <select class="form-control" id="clienteModifica">
+                    <option>Selecciona Cliente para modificar</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nombreModifica">Nombre:</label>
+                <input type="text" class="form-control" id="nombreCliente" name="nombreCliente" placeholder="Introduce nombre" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="apellidosCliente">Apellidos:</label>
+                <input type="text" class="form-control" id="apellidosCliente" name="apellidosCliente" placeholder="Introduce apellidos" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="direccionCliente">Dirección:</label>
+                <input type="text" class="form-control" id="direccionCliente" name="direccionCliente" placeholder="Introduce dirección" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="localidadCliente">Localidad:</label>
+                <input type="text" class="form-control" id="localidadCliente" name="localidadCliente" placeholder="Introduce localidad" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="cpCliente">Código Postal:</label>
+                <input type="number" min="00001" max="99999" class="form-control" id="cpCliente" name="cpCliente" placeholder="Introduce código postal" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="telefonoCliente">Teléfono</label>
+                <input type="number" class="form-control" id="telefonoCliente" name="telefonoCliente" min="600000000" max="999999999" placeholder="Introduce nº de teléfono" disabled="disabled">
+            </div>
+
+
+            <div class="text-center">
+                <button type="button" name="volver" id="btnVolverModificaCliente" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="reset" class="btn btn-default btn-sm btn-danger">Limpiar</button>
+                <button type="button" name="envioCliente" class="btn btn-default btn-sm btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+    
+    <div id="altaMaquinaria">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Alta de Maquinaria</h1>
+        <form role="form" name="formAltaMaquinaria" id="formAltaMaquinaria" class="col-sm-offset-2 col-sm-8">
+            <div class="form-group">
+                <label for="dniMaquinaria">ID:</label>
+                <input type="text" class="form-control" id="idMaquinaria" name="idMaquinaria" placeholder="Introduce ID" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="nombreMaquinaria">Nombre:</label>
+                <input type="text" class="form-control" id="nombreMaquinaria" name="nombreMaquinaria" placeholder="Introduce nombre">
+            </div>
+            <div class="form-group">
+                <label for="marcaMaquinaria">Marca:</label>
+                <input type="text" class="form-control" id="marcaMaquinaria" name="marcaMaquinaria" placeholder="Introduce marca">
+            </div>
+            <div class="form-group">
+                <label for="precioMaquinaria">Precio Alquiler:</label>
+                <input type="number" step=0.01 class="form-control" id="precioMaquinaria" name="precioMaquinaria" placeholder="Introduce precio alquiler">
+            </div>
+            <div class="form-group">
+                <label>Tipo Maquinaria:</label><br>
+                <div class="btn-group">
+                    <label class="btn btn-default">
+                        <input type="radio" name="rbtTipoMaquinariaAlta" id="tipoElectricaAlta" value="electrica" onclick="document.getElementById('capaAltaTipoElectrica').style.display='block';document.getElementById('capaAltaTipoCombustible').style.display='none';"> Eléctrica
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" name="rbtTipoMaquinariaAlta" id="tipoCombustibleAlta" value="combustible" onclick="document.getElementById('capaAltaTipoElectrica').style.display='none';document.getElementById('capaAltaTipoCombustible').style.display='block';"> Combustible
+                    </label>
+                </div>
+            </div>
+            <div id="capaAltaTipoElectrica">
+            	 <div class="form-group">
+               		<label for="bateriaElectrica">Baterías:</label>
+                	<input type="number" min="1" max="10" pattern="\d*" maxlength="2" class="form-control" id="bateriaElectrica" name="bateriaElectrica" placeholder="Introduce número de baterías">
+            	</div>
+            	<div class="form-group">
+                	<label for="voltajeElectrica">Voltaje:</label>
+                	<input type="number" min="0.00" max="350.00" step=3.2 class="form-control" id="voltajeElectrica" name="voltajeElectrica" placeholder="Introduce voltaje de batería">
+            	</div>
+            </div>
+			<div id="capaAltaTipoCombustible">
+            	 <div class="form-group">
+               		<label for="tipoCombustible">Tipo Combustible:</label>
+                	<input type="text" class="form-control" id="tipoCombustible" name="tipoCombustible" placeholder="Introduce tipo de combustible">
+            
+            	</div>
+            	<div class="form-group">
+                	<label for="capacidadCombustible">Capacidad:</label>
+                	<input type="number" min="0" max="400" step="25" class="form-control" id="capacidadCombustible" name="capacidadCombustible" placeholder="Introduce litros de capacidad">
+            	</div>
+            </div>
+
+            <div class="text-center">
+                <button type="button" name="volver" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="reset" class="btn btn-default btn-sm btn-danger">Limpiar</button>
+                <button type="button" name="envioMaquinaria" class="btn btn-default btn-sm btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+    
+    <div id="bajaMaquinaria">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Baja de Maquinaria</h1>
+        <form role="form" name="formBajaMaquinaria" id="formBajaMaquinaria" class="col-sm-offset-2 col-sm-8">
+            <div class="form-group">
+                <label for="maquinariaBaja">Maquinaria</label>
+                <select class="form-control" id="maquinariaBaja">
+                    <option>Selecciona Maquinaria para dar de baja</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nombreMaquinaria">Nombre:</label>
+                <input type="text" class="form-control" id="nombreMaquinaria" name="nombreMaquinaria" placeholder="Introduce nombre" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="marcaMaquinaria">Marca:</label>
+                <input type="text" class="form-control" id="marcaMaquinaria" name="marcaMaquinaria" placeholder="Introduce marca" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="precioMaquinaria">Precio Alquiler:</label>
+                <input type="number" step=0.01 class="form-control" id="precioMaquinaria" name="precioMaquinaria" placeholder="Introduce precio alquiler" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label>Tipo Maquinaria:</label><br>
+                <div class="btn-group">
+                    <label class="btn btn-default">
+                        <input type="radio" name="rbtTipoMaquinariaBaja" id="tipoElectricaBaja" value="electrica" disabled="disabled"> Eléctrica
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" name="rbtTipoMaquinariaBaja" id="tipoCombustibleBaja" value="combustible" disabled="disabled"> Combustible
+                    </label>
+                </div>
+            </div>
+            <div id="capaBajaTipoElectrica">
+            	 <div class="form-group">
+               		<label for="bateriaElectrica">Baterías:</label>
+                	<input type="number" min="1" max="10" pattern="\d*" maxlength="2" class="form-control" id="bateriaElectrica" name="bateriaElectrica" placeholder="Introduce número de baterías" disabled="disabled">
+            	</div>
+            	<div class="form-group">
+                	<label for="voltajeElectrica">Voltaje:</label>
+                	<input type="number" min="0.00" max="350.00" step=3.2 class="form-control" id="voltajeElectrica" name="voltajeElectrica" placeholder="Introduce voltaje de batería" disabled="disabled">
+            	</div>
+            </div>
+			<div id="capaBajaTipoCombustible">
+            	 <div class="form-group">
+               		<label for="tipoCombustible">Tipo Combustible:</label>
+                	<input type="text" class="form-control" id="tipoCombustible" name="tipoCombustible" placeholder="Introduce tipo de combustible" disabled="disabled">
+            
+            	</div>
+            	<div class="form-group">
+                	<label for="capacidadCombustible">Capacidad:</label>
+                	<input type="number" min="0" max="400" step="25" class="form-control" id="capacidadCombustible" name="capacidadCombustible" placeholder="Introduce litros de capacidad" disabled="disabled">
+            	</div>
+            </div>
+
+
+            <div class="text-center">
+                <button type="button" name="volver" id="btnVolverBajaMaquinaria" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="reset" class="btn btn-default btn-sm btn-danger">Limpiar</button>
+                <button type="button" name="envioMaquinaria" class="btn btn-default btn-sm btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+    
+    <div id="modificaMaquinaria">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Modificar Maquinaria</h1>
+        <form role="form" name="formModificaMaquinaria" id="formModificaMaquinaria" class="col-sm-offset-2 col-sm-8">
+            <div class="form-group">
+                <label for="maquinariaModifica">Maquinaria</label>
+                <select class="form-control" id="maquinariaModifica">
+                    <option>Selecciona Maquinaria para modificar</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nombreMaquinaria">Nombre:</label>
+                <input type="text" class="form-control" id="nombreMaquinaria" name="nombreMaquinaria" placeholder="Introduce nombre" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="marcaMaquinaria">Marca:</label>
+                <input type="text" class="form-control" id="marcaMaquinaria" name="marcaMaquinaria" placeholder="Introduce marca" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="precioMaquinaria">Precio Alquiler:</label>
+                <input type="number" step=0.01 class="form-control" id="precioMaquinaria" name="precioMaquinaria" placeholder="Introduce precio alquiler" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label>Tipo Maquinaria:</label><br>
+                <div class="btn-group">
+                    <label class="btn btn-default">
+                        <input type="radio" name="rbtTipoMaquinariaModifica" id="tipoElectricaModifica" value="electrica" disabled="disabled" onclick="document.getElementById('capaModificaTipoElectrica').style.display='block';document.getElementById('capaModificaTipoCombustible').style.display='none';"> Eléctrica
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" name="rbtTipoMaquinariaModifica" id="tipoCombustibleModifica" value="combustible" disabled="disabled" onclick="document.getElementById('capaModificaTipoElectrica').style.display='none';document.getElementById('capaModificaTipoCombustible').style.display='block';"> Combustible
+                    </label>
+                </div>
+            </div>
+            <div id="capaModificaTipoElectrica">
+            	 <div class="form-group">
+               		<label for="bateriaElectrica">Baterías:</label>
+                	<input type="number" min="1" max="9" pattern="\d*" maxlength="1" class="form-control" id="bateriaElectrica" name="bateriaElectrica" placeholder="Introduce número de baterías" disabled="disabled">
+            	</div>
+            	<div class="form-group">
+                	<label for="voltajeElectrica">Voltaje:</label>
+                	<input type="number" min="0.00" max="350.00" step=3.2 class="form-control" id="voltajeElectrica" name="voltajeElectrica" placeholder="Introduce voltaje de batería" disabled="disabled">
+            	</div>
+            </div>
+			<div id="capaModificaTipoCombustible">
+            	 <div class="form-group">
+               		<label for="tipoCombustible">Tipo Combustible:</label>
+                	<input type="text" class="form-control" id="tipoCombustible" name="tipoCombustible" placeholder="Introduce tipo de combustible" disabled="disabled">
+            	</div>
+            	<div class="form-group">
+                	<label for="capacidadCombustible">Capacidad:</label>
+                	<input type="number" min="0" max="400" step="25" class="form-control" id="capacidadCombustible" name="capacidadCombustible" placeholder="Introduce litros de capacidad" disabled="disabled">
+            	</div>
+            </div>
+
+
+            <div class="text-center">
+                <button type="button" name="volver" id="btnVolverModificaMaquinaria" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="reset" class="btn btn-default btn-sm btn-danger">Limpiar</button>
+                <button type="button" name="envioMaquinaria" class="btn btn-default btn-sm btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+    
+	<div id="altaProveedor">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Alta de Proveedor</h1>
+        <form role="form" name="formAltaProveedor" id="formAltaProveedor" class="col-sm-offset-2 col-sm-8">
+            <div class="form-group">
+                <label for="cifProveedor">CIF:</label>
+                <input type="text" class="form-control" id="cifProveedor" name="cifProveedor" placeholder="Introduce CIF">
+            </div>
+            <div class="form-group">
+                <label for="nombreProveedor">Nombre:</label>
+                <input type="text" class="form-control" id="nombreProveedor" name="nombreProveedor" placeholder="Introduce nombre">
+            </div>
+            <div class="form-group">
+                <label for="direccionProveedor">Dirección:</label>
+                <input type="text" class="form-control" id="direccionProveedor" name="direccionProveedor" placeholder="Introduce dirección">
+            </div>
+            <div class="form-group">
+                <label for="localidadProveedor">Localidad:</label>
+                <input type="text" class="form-control" id="localidadProveedor" name="localidadProveedor" placeholder="Introduce localidad">
+            </div>
+            <div class="form-group">
+                <label for="cpProveedor">Código Postal:</label>
+                <input type="number" min="00001" max="99999" class="form-control" id="cpProveedor" name="cpProveedor" placeholder="Introduce código postal">
+            </div>
+            <div class="form-group">
+                <label for="telefonoProveedor">Teléfono</label>
+                <input type="number" class="form-control" id="telefonoProveedor" name="telefonoProveedor" min="600000000" max="999999999" placeholder="Introduce nº de teléfono">
+            </div>
+
+            <div class="text-center">
+                <button type="button" name="volver" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="reset" class="btn btn-default btn-sm btn-danger">Limpiar</button>
+                <button type="button" id="envioProveedor" class="btn btn-default btn-sm btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+	
+	<div id="bajaProveedor">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Baja de Proveedor</h1>
+        <form role="form" name="formBajaProveedor" id="formBajaProveedor" class="col-sm-offset-2 col-sm-8">
+            <div class="form-group">
+                <label for="proveedorBaja">Proveedor</label>
+                <select class="form-control" id="proveedorBaja">
+                    <option>Selecciona Proveedor para dar de baja</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nombreProveedor">Nombre:</label>
+                <input type="text" class="form-control" id="nombreProveedor" name="nombreProveedor" placeholder="Introduce nombre" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="direccionProveedor">Dirección:</label>
+                <input type="text" class="form-control" id="direccionProveedor" name="direccionProveedor" placeholder="Introduce dirección" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="localidadProveedor">Localidad:</label>
+                <input type="text" class="form-control" id="localidadProveedor" name="localidadProveedor" placeholder="Introduce localidad" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="cpProveedor">Código Postal:</label>
+                <input type="number" min="00001" max="99999" class="form-control" id="cpProveedor" name="cpProveedor" placeholder="Introduce código postal" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="telefonoProveedor">Teléfono</label>
+                <input type="number" class="form-control" id="telefonoProveedor" name="telefonoProveedor" min="600000000" max="999999999" placeholder="Introduce nº de teléfono" disabled="disabled">
+            </div>
+
+
+            <div class="text-center">
+                <button type="button" name="volver" id="btnVolverBajaProveedor" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="reset" class="btn btn-default btn-sm btn-danger">Limpiar</button>
+                <button type="button" name="envioProveedor" class="btn btn-default btn-sm btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+    
+    <div id="modificaProveedor">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Modificar Proveedor</h1>
+        <form role="form" name="formModificaProveedor" id="formModificaProveedor" class="col-sm-offset-2 col-sm-8">
+            <div class="form-group">
+                <label for="proveedorModifica">Proveedor</label>
+                <select class="form-control" id="proveedorModifica">
+                    <option>Selecciona Proveedor para modificar</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nombreModifica">Nombre:</label>
+                <input type="text" class="form-control" id="nombreProveedor" name="nombreProveedor" placeholder="Introduce nombre" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="direccionProveedor">Dirección:</label>
+                <input type="text" class="form-control" id="direccionProveedor" name="direccionProveedor" placeholder="Introduce dirección" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="localidadProveedor">Localidad:</label>
+                <input type="text" class="form-control" id="localidadProveedor" name="localidadProveedor" placeholder="Introduce localidad" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="cpProveedor">Código Postal:</label>
+                <input type="number" min="00001" max="99999" class="form-control" id="cpProveedor" name="cpProveedor" placeholder="Introduce código postal" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="telefonoProveedor">Teléfono</label>
+                <input type="number" class="form-control" id="telefonoProveedor" name="telefonoProveedor" min="600000000" max="999999999" placeholder="Introduce nº de teléfono" disabled="disabled">
+            </div>
+
+
+            <div class="text-center">
+                <button type="button" name="volver" id="btnVolverModificaProveedor" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="reset" class="btn btn-default btn-sm btn-danger">Limpiar</button>
+                <button type="button" name="envioProveedor" class="btn btn-default btn-sm btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+	<div id="altaEmpleado">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Alta de Empleado</h1>
+        <form role="form" name="formAltaEmpleado" id="formAltaEmpleado" class="col-sm-offset-2 col-sm-8">
+            <div class="form-group">
+                <label for="dniEmpleado">DNI:</label>
+                <input type="text" class="form-control" id="dniEmpleado" name="dniEmpleado" placeholder="Introduce DNI">
+            </div>
+            <div class="form-group">
+                <label for="nombreEmpleado">Nombre:</label>
+                <input type="text" class="form-control" id="nombreEmpleado" name="nombreEmpleado" placeholder="Introduce nombre">
+            </div>
+            <div class="form-group">
+                <label for="apellidosEmpleado">Apellidos:</label>
+                <input type="text" class="form-control" id="apellidosEmpleado" name="apellidosEmpleado" placeholder="Introduce apellidos">
+            </div>
+            <div class="form-group">
+                <label for="rolEmpleado">Rol:</label>
+                <input type="text" class="form-control" id="rolEmpleado" name="rolEmpleado" placeholder="Introduce rol">
+            </div>
+            <div class="form-group">
+                <label for="direccionEmpleado">Dirección:</label>
+                <input type="text" class="form-control" id="direccionEmpleado" name="direccionEmpleado" placeholder="Introduce dirección">
+            </div>
+            <div class="form-group">
+                <label for="localidadEmpleado">Localidad:</label>
+                <input type="text" class="form-control" id="localidadEmpleado" name="localidadEmpleado" placeholder="Introduce localidad">
+            </div>
+            <div class="form-group">
+                <label for="cpEmpleado">Código Postal:</label>
+                <input type="number" min="00001" max="99999" class="form-control" id="cpEmpleado" name="cpEmpleado" placeholder="Introduce código postal">
+            </div>
+            <div class="form-group">
+                <label for="telefonoEmpleado">Teléfono</label>
+                <input type="number" class="form-control" id="telefonoEmpleado" name="telefonoEmpleado" min="600000000" max="999999999" placeholder="Introduce nº de teléfono">
+            </div>
+
+            <div class="text-center">
+                <button type="button" name="volver" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="reset" class="btn btn-default btn-sm btn-danger">Limpiar</button>
+                <button type="button" id="envioEmpleado" class="btn btn-default btn-sm btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+	
+	<div id="bajaEmpleado">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Baja de Empleado</h1>
+        <form role="form" name="formBajaEmpleado" id="formBajaEmpleado" class="col-sm-offset-2 col-sm-8">
+            <div class="form-group">
+                <label for="empleadoBaja">Empleado</label>
+                <select class="form-control" id="empleadoBaja">
+                    <option>Selecciona Empleado para dar de baja</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nombreEmpleado">Nombre:</label>
+                <input type="text" class="form-control" id="nombreEmpleado" name="nombreEmpleado" placeholder="Introduce nombre" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="apellidosEmpleado">Apellidos:</label>
+                <input type="text" class="form-control" id="apellidosEmpleado" name="apellidosEmpleado" placeholder="Introduce apellidos" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="rolEmpleado">Rol:</label>
+                <input type="text" class="form-control" id="rolEmpleado" name="rolEmpleado" placeholder="Introduce rol" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="direccionEmpleado">Dirección:</label>
+                <input type="text" class="form-control" id="direccionEmpleado" name="direccionEmpleado" placeholder="Introduce dirección" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="localidadEmpleado">Localidad:</label>
+                <input type="text" class="form-control" id="localidadEmpleado" name="localidadEmpleado" placeholder="Introduce localidad" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="cpEmpleado">Código Postal:</label>
+                <input type="number" min="00001" max="99999" class="form-control" id="cpEmpleado" name="cpEmpleado" placeholder="Introduce código postal" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="telefonoEmpleado">Teléfono</label>
+                <input type="number" class="form-control" id="telefonoEmpleado" name="telefonoEmpleado" min="600000000" max="999999999" placeholder="Introduce nº de teléfono" disabled="disabled">
+            </div>
+
+
+            <div class="text-center">
+                <button type="button" name="volver" id="btnVolverBajaEmpleado" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="reset" class="btn btn-default btn-sm btn-danger">Limpiar</button>
+                <button type="button" name="envioEmpleado" class="btn btn-default btn-sm btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+    
+    <div id="modificaEmpleado">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Modificar Empleado</h1>
+        <form role="form" name="formModificaEmpleado" id="formModificaEmpleado" class="col-sm-offset-2 col-sm-8">
+            <div class="form-group">
+                <label for="empleadoModifica">Empleado</label>
+                <select class="form-control" id="empleadoModifica">
+                    <option>Selecciona Empleado para modificar</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nombreModifica">Nombre:</label>
+                <input type="text" class="form-control" id="nombreEmpleado" name="nombreEmpleado" placeholder="Introduce nombre" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="apellidosEmpleado">Apellidos:</label>
+                <input type="text" class="form-control" id="apellidosEmpleado" name="apellidosEmpleado" placeholder="Introduce apellidos" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="rolEmpleado">Rol:</label>
+                <input type="text" class="form-control" id="rolEmpleado" name="rolEmpleado" placeholder="Introduce rol" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="direccionEmpleado">Dirección:</label>
+                <input type="text" class="form-control" id="direccionEmpleado" name="direccionEmpleado" placeholder="Introduce dirección" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="localidadEmpleado">Localidad:</label>
+                <input type="text" class="form-control" id="localidadEmpleado" name="localidadEmpleado" placeholder="Introduce localidad" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="cpEmpleado">Código Postal:</label>
+                <input type="number" min="00001" max="99999" class="form-control" id="cpEmpleado" name="cpEmpleado" placeholder="Introduce código postal" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="telefonoEmpleado">Teléfono</label>
+                <input type="number" class="form-control" id="telefonoEmpleado" name="telefonoEmpleado" min="600000000" max="999999999" placeholder="Introduce nº de teléfono" disabled="disabled">
+            </div>
+
+
+            <div class="text-center">
+                <button type="button" name="volver" id="btnVolverModificaEmpleado" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="reset" class="btn btn-default btn-sm btn-danger">Limpiar</button>
+                <button type="button" name="envioEmpleado" class="btn btn-default btn-sm btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+    
+	<div id="altaIncidencia">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Alta de Incidencia</h1>
+        <form role="form" name="formAltaIncidencia" id="formAltaIncidencia" class="col-sm-offset-2 col-sm-8">
+            <div class="form-group">
+                <label for="idIncidencia">ID:</label>
+                <input type="text" class="form-control" id="idIncidencia" name="idIncidencia" placeholder="Introduce ID" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="maquinariaAltaIncidencia">Maquinaria:</label>
+                <select class="form-control" id="maquinariaAltaIncidencia" name="maquinariaAltaIncidencia">
+                    <option>Selecciona Maquinaria</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tituloIncidencia">Título:</label>
+                <input type="text" class="form-control" id="tituloIncidencia" name="tituloIncidencia" placeholder="Introduce título">
+            </div>
+            <div class="form-group">
+                <label for="descripcionIncidencia">Descripción:</label>
+                <textarea class="form-control" id="descripcionIncidencia" name="descripcionIncidencia" placeholder="Escriba el motivo de la incidencia con detalles" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Estado:</label><br>
+                <div class="btn-group">
+                    <label class="btn btn-default">
+                        <input type="radio" name="estado" id="incidenciaActiva" value="activa" checked="checked"> Activa
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" name="estado" id="incidenciaAnulada" value="anulada" disabled="disabled"> Anulada
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="fechaIncidencia">Fecha:</label>
+                <input type="text" class="form-control" id="fechaIncidencia" name="fechaIncidencia" placeholder="Introduce fecha" disabled="disabled">
+            </div>
+			
+
+            <div class="text-center">
+                <button type="button" name="volver" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="reset" class="btn btn-default btn-sm btn-danger">Limpiar</button>
+                <button type="button" id="envioIncidencia" class="btn btn-default btn-sm btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+	
+	<div id="bajaIncidencia">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Anular Incidencia</h1>
+        <form role="form" name="formBajaIncidencia" id="formBajaIncidencia" class="col-sm-offset-2 col-sm-8">
+            <div class="form-group">
+                <label for="incidenciaBaja">Incidencia:</label>
+                <select class="form-control" id="incidenciaBaja" name="incidenciaBaja" >
+                    <option>Selecciona Incidencia para dar de baja</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="maquinariaBajaIncidencia">Maquinaria</label>
+                <select class="form-control" id="maquinariaBajaIncidencia" name="maquinariaBajaIncidencia" disabled="disabled">
+                    <option>Selecciona Maquinaria</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tituloIncidencia">Título:</label>
+                <input type="text" class="form-control" id="tituloIncidencia" name="tituloIncidencia" placeholder="Introduce título" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="descripcionIncidencia">Descripción:</label>
+                <textarea class="form-control" id="descripcionIncidencia" name="descripcionIncidencia" placeholder="Escriba el motivo de la incidencia con detalles" rows="2" disabled="disabled"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Estado:</label><br>
+                <div class="btn-group">
+                    <label class="btn btn-default">
+                        <input type="radio" name="estado" id="incidenciaActiva" value="activa" checked="checked" disabled="disabled"> Activa
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" name="estado" id="incidenciaAnulada" value="anulada" disabled="disabled"> Anulada
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="fechaIncidencia">Fecha:</label>
+                <input type="text" class="form-control" id="fechaIncidencia" name="fechaIncidencia" placeholder="Introduce fecha" disabled="disabled">
+            </div>
+
+
+            <div class="text-center">
+                <button type="button" name="volver" id="btnVolverBajaIncidencia" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="reset" class="btn btn-default btn-sm btn-danger">Limpiar</button>
+                <button type="button" name="envioIncidencia" class="btn btn-default btn-sm btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+    
+    <div id="modificaIncidencia">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Modificar Incidencia</h1>
+        <form role="form" name="formModificaIncidencia" id="formModificaIncidencia" class="col-sm-offset-2 col-sm-8">
+            <div class="form-group">
+                <label for="incidenciaModifica">Incidencia:</label>
+                <select class="form-control" id="incidenciaModifica">
+                    <option>Selecciona Incidencia para modificar</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="maquinariaModificaIncidencia">Maquinaria</label>
+                <select class="form-control" id="maquinariaModificaIncidencia" name="maquinariaModificaIncidencia" disabled="disabled">
+                    <option>Selecciona Maquinaria</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tituloIncidencia">Título:</label>
+                <input type="text" class="form-control" id="tituloIncidencia" name="tituloIncidencia" placeholder="Introduce título" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="descripcionIncidencia">Descripción:</label>
+                <textarea class="form-control" id="descripcionIncidencia" name="descripcionIncidencia" placeholder="Escriba el motivo de la incidencia con detalles" rows="2" disabled="disabled" disabled="disabled"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Estado:</label><br>
+                <div class="btn-group">
+                    <label class="btn btn-default">
+                        <input type="radio" name="estado" id="incidenciaActiva" value="activa" disabled="disabled"> Activa
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" name="estado" id="incidenciaAnulada" value="anulada" disabled="disabled"> Anulada
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="fechaIncidencia">Fecha:</label>
+                <input type="text" class="form-control" id="fechaIncidencia" name="fechaIncidencia" placeholder="Introduce fecha" disabled="disabled">
+            </div>
+
+
+            <div class="text-center">
+                <button type="button" name="volver" id="btnVolverModificaIncidencia" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="reset" class="btn btn-default btn-sm btn-danger">Limpiar</button>
+                <button type="button" name="envioIncidencia" class="btn btn-default btn-sm btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+    
+	<div id="altaCompra">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Nueva Compra</h1>
+        <form role="form" name="formAltaCompra" id="formAltaCompra" class="col-sm-offset-2 col-sm-8">
+            <div class="form-group">
+                <label for="idCompra">ID:</label>
+                <input type="text" class="form-control" id="idCompra" name="idCompra" placeholder="Introduce ID" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="empleadoAltaCompra">Empleado:</label>
+                <select class="form-control" id="empleadoAltaCompra" name="empleadoAltaCompra">
+                    <option>Selecciona Empleado</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="proveedorAltaCompra">Proveedor:</label>
+                <select class="form-control" id="proveedorAltaCompra" name="proveedorAltaCompra">
+                    <option>Selecciona Proveedor</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="maquinariaAltaCompra">Maquinaria:</label>
+                <select class="form-control" id="maquinariaAltaCompra" name="maquinariaAltaCompra">
+                    <option>Selecciona Maquinaria</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cuantiaCompra">Cuantía:</label>
+                <input type="number" step=150.00 class="form-control" id="cuantiaCompra" name="cuantiaCompra" placeholder="Introduce cuantía">
+            </div>
+            <div class="form-group">
+                <label for="fechaCompra">Fecha:</label>
+                <input type="text" class="form-control" id="fechaCompra" name="fechaCompra" placeholder="Introduce fecha" disabled="disabled">
+            </div>
+
+            <div class="text-center">
+                <button type="button" name="volver" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="reset" class="btn btn-default btn-sm btn-danger">Limpiar</button>
+                <button type="button" id="envioCompra" class="btn btn-default btn-sm btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+	
+	<div id="bajaCompra">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Anula Compra</h1>
+        <form role="form" name="formBajaCompra" id="formBajaCompra" class="col-sm-offset-2 col-sm-8">
+            <div class="form-group">
+                <label for="compraBajaCompra">Compra:</label>
+                <select class="form-control" id="compraBajaCompra" name="compraBajaCompra">
+                    <option>Selecciona Compra</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="empleadoBajaCompra">Empleado:</label>
+                <select class="form-control" id="empleadoBajaCompra" name="empleadoBajaCompra" disabled="disabled">
+                    <option>Selecciona Empleado</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="proveedorBajaCompra">Proveedor:</label>
+                <select class="form-control" id="proveedorBajaCompra" name="proveedorBajaCompra" disabled="disabled">
+                    <option>Selecciona Proveedor</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="maquinariaBajaCompra">Maquinaria:</label>
+                <select class="form-control" id="maquinariaBajaCompra" name="maquinariaBajaCompra" disabled="disabled">
+                    <option>Selecciona Maquinaria</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cuantiaCompra">Cuantía:</label>
+                <input type="number" step=150.00 class="form-control" id="cuantiaCompra" name="cuantiaCompra" placeholder="Introduce cuantía" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="fechaCompra">Fecha:</label>
+                <input type="text" class="form-control" id="fechaCompra" name="fechaCompra" placeholder="Introduce fecha" disabled="disabled">
+            </div>
+
+            <div class="text-center">
+                <button type="button" name="volver" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="reset" class="btn btn-default btn-sm btn-danger">Limpiar</button>
+                <button type="button" id="envioCompra" class="btn btn-default btn-sm btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+	
+	<div id="modificaCompra">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Modificar Compra</h1>
+        <form role="form" name="formModificaCompra" id="formModificaCompra" class="col-sm-offset-2 col-sm-8">
+            <div class="form-group">
+                <label for="compraModificaCompra">Compra:</label>
+                <select class="form-control" id="compraModificaCompra" name="compraModificaCompra">
+                    <option>Selecciona Compra</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="empleadoAltaCompra">Empleado:</label>
+                <select class="form-control" id="empleadoModificaCompra" name="empleadoModificaCompra" disabled="disabled">
+                    <option>Selecciona Empleado</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="proveedorModificaCompra">Proveedor:</label>
+                <select class="form-control" id="proveedorModificaCompra" name="proveedorModificaCompra" disabled="disabled">
+                    <option>Selecciona Proveedor</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="maquinariaModificaCompra">Maquinaria:</label>
+                <select class="form-control" id="maquinariaModificaCompra" name="maquinariaModificaCompra" disabled="disabled">
+                    <option>Selecciona Maquinaria</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cuantiaCompra">Cuantía:</label>
+                <input type="number" step=150.00 class="form-control" id="cuantiaCompra" name="cuantiaCompra" placeholder="Introduce cuantía" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="fechaCompra">Fecha:</label>
+                <input type="text" class="form-control" id="fechaCompra" name="fechaCompra" placeholder="Introduce fecha" disabled="disabled" disabled="disabled">
+            </div>
+
+            <div class="text-center">
+                <button type="button" name="volver" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="reset" class="btn btn-default btn-sm btn-danger">Limpiar</button>
+                <button type="button" id="envioCompra" class="btn btn-default btn-sm btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+	
+	
+	<div id="altaAlquiler">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Nuevo Alquiler</h1>
+        <form role="form" name="formAltaAlquiler" id="formAltaAlquiler" class="col-sm-offset-2 col-sm-8">
+            <div class="form-group">
+                <label for="idAlquiler">ID:</label>
+                <input type="text" class="form-control" id="idAlquiler" name="idAlquiler" placeholder="Introduce ID" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="empleadoAltaAlquiler">Empleado:</label>
+                <select class="form-control" id="empleadoAltaAlquiler" name="empleadoAltaAlquiler">
+                    <option>Selecciona Empleado</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="clienteAltaAlquiler">Cliente:</label>
+                <select class="form-control" id="clienteAltaAlquiler" name="clienteAltaAlquiler">
+                    <option>Selecciona Cliente</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="maquinariaAltaAlquiler">Maquinaria:</label>
+                <select class="form-control" id="maquinariaAltaAlquiler" name="maquinariaAltaAlquiler">
+                    <option>Selecciona Maquinaria</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fechaInicioAlquiler">Fecha Inicio:</label>
+                <input type="text" class="form-control" id="fechaInicioAlquiler" name="fechaInicioAlquiler" placeholder="Introduce fecha inicio" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="fechaFinAlquiler">Fecha Fin:</label>
+                <input type="text" class="form-control" id="fechaFinAlquiler" name="fechaFinAlquiler" placeholder="Introduce fecha fin" disabled="disabled">
+            </div>
+
+            <div class="text-center">
+                <button type="button" name="volver" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="reset" class="btn btn-default btn-sm btn-danger">Limpiar</button>
+                <button type="button" id="envioAlquiler" class="btn btn-default btn-sm btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+	
+	<div id="bajaAlquiler">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Anula Alquiler</h1>
+        <form role="form" name="formBajaAlquiler" id="formBajaAlquiler" class="col-sm-offset-2 col-sm-8">
+            <div class="form-group">
+                <label for="alquilerBajaAlquiler">Alquiler:</label>
+                <select class="form-control" id="alquilerBajaAlquiler" name="alquilerBajaAlquiler">
+                    <option>Selecciona Alquiler</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="empleadoBajaAlquiler">Empleado:</label>
+                <select class="form-control" id="empleadoBajaAlquiler" name="empleadoBajaAlquiler" disabled="disabled">
+                    <option>Selecciona Empleado</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="clienteBajaAlquiler">Cliente:</label>
+                <select class="form-control" id="clienteBajaAlquiler" name="clienteBajaAlquiler" disabled="disabled">
+                    <option>Selecciona Cliente</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="maquinariaBajaAlquiler">Maquinaria:</label>
+                <select class="form-control" id="maquinariaBajaAlquiler" name="maquinariaBajaAlquiler" disabled="disabled">
+                    <option>Selecciona Maquinaria</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fechaInicioAlquiler">Fecha Inicio:</label>
+                <input type="text" class="form-control" id="fechaInicioAlquiler" name="fechaInicioAlquiler" placeholder="Introduce fecha inicio" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="fechaFinAlquiler">Fecha Fin:</label>
+                <input type="text" class="form-control" id="fechaFinAlquiler" name="fechaFinAlquiler" placeholder="Introduce fecha fin" disabled="disabled">
+            </div>
+
+            <div class="text-center">
+                <button type="button" name="volver" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="reset" class="btn btn-default btn-sm btn-danger">Limpiar</button>
+                <button type="button" id="envioAlquiler" class="btn btn-default btn-sm btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+	
+	<div id="modificaAlquiler">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Modificar Alquiler</h1>
+        <form role="form" name="formModificaAlquiler" id="formModificaAlquiler" class="col-sm-offset-2 col-sm-8">
+            <div class="form-group">
+                <label for="alquilerModificaAlquiler">Alquiler:</label>
+                <select class="form-control" id="alquilerModificaAlquiler" name="alquilerModificaAlquiler">
+                    <option>Selecciona Alquiler</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="empleadoAltaAlquiler">Empleado:</label>
+                <select class="form-control" id="empleadoModificaAlquiler" name="empleadoModificaAlquiler" disabled="disabled">
+                    <option>Selecciona Empleado</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="clienteModificaAlquiler">Cliente:</label>
+                <select class="form-control" id="clienteModificaAlquiler" name="clienteModificaAlquiler" disabled="disabled">
+                    <option>Selecciona Cliente</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="maquinariaModificaAlquiler">Maquinaria:</label>
+                <select class="form-control" id="maquinariaModificaAlquiler" name="maquinariaModificaAlquiler" disabled="disabled">
+                    <option>Selecciona Maquinaria</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fechaInicioAlquiler">Fecha Inicio:</label>
+                <input type="text" class="form-control" id="fechaInicioAlquiler" name="fechaInicioAlquiler" placeholder="Introduce fecha inicio" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="fechaFinAlquiler">Fecha Fin:</label>
+                <input type="text" class="form-control" id="fechaFinAlquiler" name="fechaFinAlquiler" placeholder="Introduce fecha fin" disabled="disabled">
+            </div>
+
+            <div class="text-center">
+                <button type="button" name="volver" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="reset" class="btn btn-default btn-sm btn-danger">Limpiar</button>
+                <button type="button" id="envioAlquiler" class="btn btn-default btn-sm btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+    
+	<div id="doc">
+		<div class="row text-center">
+        	<h1 class="text-center">Especificaciones</h1>
+        	<div class="col-sm-offset-2 col-sm-8 col-offset-xs-2 col-xs-8">
+            	<iframe id="documento" style="width:100%;height:500px;"></iframe>
+			</div>
+		</div>
+        <div class="row text-center">
+        	<button type="button" name="volver" id="btnVolver" class="btn btn-default btn-sm btn-warning">Volver</button>
+        	<button type="button" id="imprimirUML" class="btn btn-default btn-sm btn-success">Imprimir</button>
+        </div>
+    </div>
+	<div id="uml">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Diagrama UML</h1>
+        <form role="form" class="col-sm-offset-1 col-sm-10">
+    		<img  src="Documentos/uml.png" class="img-responsive" />
+            <br/>
+            
+            <div class="text-center">
+                <button type="button" name="volver" id="btnVolver" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="button" id="imprimirUML" class="btn btn-default btn-sm btn-success">Imprimir</button>
+            </div>
+        </form>
+    </div>
+	
+	<!-- LISTADOS -->
+    <div id="mClientes">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Clientes</h1>
+        <div id="tCliente" class="text-center"></div>
+        <form role="form" class="col-sm-offset-2 col-sm-8">
+            <br/>
+            <div class="text-center">
+                <button type="button" name="volver" id="btnVolverCliente" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="button" id="imprimirClientes" class="btn btn-default btn-sm btn-success">Imprimir</button>
+            </div>
+        </form>
+    </div>
+ 
+    <div id="mMaquinarias">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Maquinarias</h1>
+        <div id="tMaquinaria" class="text-center"></div>
+        <form role="form" class="col-sm-offset-2 col-sm-8">
+            <br/>
+            <div class="text-center">
+                <button type="button" name="volver" id="btnVolverMaquinaria" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="button" id="imprimirMaquinarias" class="btn btn-default btn-sm btn-success">Imprimir</button>
+            </div>
+        </form>
+    </div>
+    
+    <div id="mProveedores">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Proveedores</h1>
+        <div id="tProveedor" class="text-center"></div>
+        <form role="form" class="col-sm-offset-2 col-sm-8">
+            <br/>
+            <div class="text-center">
+                <button type="button" name="volver" id="btnVolverProveedor" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="button" id="imprimirProveedores" class="btn btn-default btn-sm btn-success">Imprimir</button>
+            </div>
+        </form>
+    </div>
+    
+    <div id="mEmpleados">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Empleados</h1>
+        <div id="tEmpleado" class="text-center"></div>
+        <form role="form" class="col-sm-offset-2 col-sm-8">
+            <br/>
+            <div class="text-center">
+                <button type="button" name="volver" id="btnVolverEmpleado" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="button" id="imprimirEmpleados" class="btn btn-default btn-sm btn-success">Imprimir</button>
+            </div>
+        </form>
+    </div>
+    
+    <div id="mCompras">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Compras</h1>
+        <div id="tCompra" class="text-center"></div>
+        <form role="form" class="col-sm-offset-2 col-sm-8">
+            <br/>
+            <div class="text-center">
+                <button type="button" name="volver" id="btnVolverCompra" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="button" id="imprimirCompras" class="btn btn-default btn-sm btn-success">Imprimir</button>
+            </div>
+        </form>
+    </div>
+    
+    
+    <div id="mAlquileres">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Alquileres</h1>
+        <div id="tAlquiler" class="text-center"></div>
+        <form role="form" class="col-sm-offset-2 col-sm-8">
+            <br/>
+            <div class="text-center">
+                <button type="button" name="volver" id="btnVolverAlquiler" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="button" id="imprimirAlquileres" class="btn btn-default btn-sm btn-success">Imprimir</button>
+            </div>
+        </form>
+    </div>
+    
+    <div id="mIncidencias">
+        <h1 class="col-sm-offset-2 col-sm-8 text-center">Incidencias</h1>
+        <div id="tIncidencia" class="text-center"></div>
+        <form role="form" class="col-sm-offset-2 col-sm-8">
+            <br/>
+            <div class="text-center">
+                <button type="button" name="volver" id="btnVolverIncidencia" class="btn btn-default btn-sm btn-warning">Volver</button>
+                <button type="button" id="imprimirIncidencias" class="btn btn-default btn-sm btn-success">Imprimir</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
