@@ -1,0 +1,215 @@
+
+#logo img{
+    margin:10px auto;
+}
+#gestion{
+	background-color:#182C4D;
+	width:100%;height:100%;
+	padding-right: 0px;
+    padding-left: 0px;
+    border-radius:15px;
+}
+.capaBotones{
+	display:none;
+	background-color:#182C4D;
+	height:100%;
+}
+#gestionClientes,#gestionMaquinarias,#gestionProveedores,#gestionCompras,#gestionAlquileres,#gestionDocumentos,#gestionEmpleados,#gestionIncidencias{
+	height:100%;
+	background-color:#61b438;
+	padding:0.2em;
+	border:4px solid #182C4D;
+	border-radius:5%;
+	/*margin-bottom: 20px;*/
+}
+.tituloGestion{
+    font-size: 12pt;
+    color: #fff;
+    text-transform:uppercase;
+    font-weight:bold;
+    text-align:center;
+    background-color:#182C4D;
+    border-radius: 0 0 .5em .5em;
+}
+
+	
+#gestion i{
+	color:white;
+	font-size:10vw;
+}
+
+#tablaClientes, #tablaMaquinarias, #tablaProveedores, #tablaEmpleados, #tablaIncidencias, #tablaCompras, #tablaAlquileres{
+    margin:0 auto;
+    width: 80%;
+    border: 2px solid #407E41;
+}
+#tablaIncidencias, #tablaCompras,#tablaAlquileres{width:100%;}
+
+#tablaClientes th, #tablaMaquinarias th, #tablaProveedores th, #tablaEmpleados th, #tablaIncidencias th, #tablaCompras th, #tablaAlquileres th{
+    background-color: #182C4D;
+    font-size: 1.17em;
+    color: #fff;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 2px solid #182C4D;
+}
+
+#tablaClientes td, #tablaMaquinarias td, #tablaProveedores td, #tablaEmpleados td, #tablaIncidencias td, #tablaCompras td, #tablaAlquileres td{
+    background-color: #5cb85c;
+    padding: 6.5px 3px;
+    color: #white;
+    border: 2px solid #407E41;
+}
+
+#tablaClientes tr:hover, #tablaMaquinarias tr:hover, #tablaProveedores tr:hover, #tablaEmpleados tr:hover, #tablaCompras tr:hover, #tablaAlquileres tr:hover, #tablaIncidencias tr:hover{
+    background-color: #46b342;
+    color: #fff;
+    font-weight: bold;
+}
+
+#altaCliente,#bajaCliente,#modificaCliente,
+#altaMaquinaria,#bajaMaquinaria,#modificaMaquinaria,
+#capaAltaTipoElectrica,#capaAltaTipoCombustible,
+#capaBajaTipoElectrica,#capaBajaTipoCombustible,
+#capaModificaTipoElectrica,#capaModificaTipoCombustible,
+#altaProveedor,#bajaProveedor,#modificaProveedor,
+#altaEmpleado,#bajaEmpleado,#modificaEmpleado,
+#altaCompra,#bajaCompra,#modificaCompra,
+#altaAlquiler,#bajaAlquiler,#modificaAlquiler,
+#altaIncidencia,#bajaIncidencia,#modificaIncidencia,
+#mClientes,#mMaquinarias,#mProveedores,#mEmpleados,
+#mCompras,#mAlquileres,#mIncidencias,#git,#uml,#doc{
+    display: none;
+}
+
+h1{
+    color:#5cb85c;font-family: 'Lobster', cursive; font-size: 36px; font-weight: normal; margin: 10 0 0; text-shadow: 0 3px 0 #000;
+    }
+label{
+    color: #08ae1c;
+}
+
+.error{
+    border-color: #f00;
+}
+
+.form-control:focus {
+    border-color: #5cb85c;
+}
+
+
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    /* Force table to not be like tables anymore */
+    #tablaClientes table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    #tablaMaquinarias table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    #tablaEmpleados table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    #tablaProveedores table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    #tablaCompras table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    #tablaAlquileres table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    #tablaIncidencias table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    #tablaClientes thead tr, #tablaMaquinarias thead tr, #tablaEmpleados thead tr, #tablaProveedores thead tr, #tablaCompras thead tr, #tablaAlquileres thead tr, #tablaIncidencias thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #tablaClientes tr, #tablaMaquinarias tr, #tablaEmpleados tr, #tablaProveedores tr, #tablaCompras tr, #tablaAlquileres tr, #tablaIncidencias tr{
+        border: 1px solid #182C4D;
+    }
+	#tablaClientes th:before, #tablaMaquinarias th, #tablaEmpleados th, #tablaProveedores th, #tablaCompras th, #tablaAlquileres th, #tablaIncidencias th{
+        color:#fff;
+    }
+        
+    #tablaClientes td, #tablaMaquinarias td, #tablaEmpleados td, #tablaProveedores td, #tablaCompras td, #tablaAlquileres td, #tablaIncidencias td{
+        /* Behave  like a "row" */
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        border:1px solid #407E41;
+    }
+
+    #tablaClientes td:before, #tablaMaquinarias td:before, #tablaEmpleados td:before, #tablaProveedores td:before, #tablaCompras td:before, #tablaAlquileres td:before, #tablaIncidencias td:before{
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        background-color: #182C4D;
+        color:#fff;
+        font-weight:bold;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        height:100%;
+    }
+
+    #tablaClientes tbody td:nth-of-type(1):before{ content: "DNI"; }
+    #tablaClientes tbody td:nth-of-type(2):before { content: "Nombre"; }
+    #tablaClientes tbody td:nth-of-type(3):before { content: "Apellidos"; }
+    #tablaClientes tbody td:nth-of-type(4):before { content: "Dirección"; }
+    #tablaClientes tbody td:nth-of-type(5):before { content: "Localidad"; }
+    #tablaClientes tbody td:nth-of-type(6):before { content: "CP"; }
+    #tablaClientes tbody td:nth-of-type(7):before { content: "Teléfono"; }
+
+    #tablaMaquinarias tbody td:nth-of-type(1):before{ content: "ID"; }
+    #tablaMaquinarias tbody td:nth-of-type(2):before { content: "Nombre"; }
+    #tablaMaquinarias tbody td:nth-of-type(3):before { content: "Marca"; }
+    #tablaMaquinarias tbody td:nth-of-type(4):before { content: "Precio"; }
+    #tablaMaquinarias tbody td:nth-of-type(5):before { content: "Combustible"; }
+    #tablaMaquinarias tbody td:nth-of-type(6):before { content: "Voltaje/Capacidad"; }
+
+    #tablaEmpleados tbody td:nth-of-type(1):before{ content: "DNI"; }
+    #tablaEmpleados tbody td:nth-of-type(2):before { content: "Nombre"; }
+    #tablaEmpleados tbody td:nth-of-type(3):before { content: "Apellidos"; }
+    #tablaEmpleados tbody td:nth-of-type(4):before { content: "Rol"; }
+    #tablaEmpleados tbody td:nth-of-type(5):before { content: "Dirección"; }
+    #tablaEmpleados tbody td:nth-of-type(6):before { content: "Localidad"; }
+    #tablaEmpleados tbody td:nth-of-type(7):before { content: "CP"; }
+    #tablaEmpleados tbody td:nth-of-type(8):before { content: "Teléfono"; }
+
+    #tablaProveedores tbody td:nth-of-type(1):before { content: "CIF"; }
+    #tablaProveedores tbody td:nth-of-type(2):before { content: "Nombre"; }
+    #tablaProveedores tbody td:nth-of-type(3):before { content: "Dirección"; }
+    #tablaProveedores tbody td:nth-of-type(4):before { content: "Localidad"; }
+    #tablaProveedores tbody td:nth-of-type(5):before { content: "CP"; }
+    #tablaProveedores tbody td:nth-of-type(6):before { content: "Teléfono"; }
+
+    #tablaCompras tbody td:nth-of-type(1):before{ content: "ID"; }
+    #tablaCompras tbody td:nth-of-type(2):before{ content: "Empleado"; }
+    #tablaCompras tbody td:nth-of-type(3):before{ content: "Proveedor"; }
+    #tablaCompras tbody td:nth-of-type(4):before{ content: "Maquinaria"; }
+    #tablaCompras tbody td:nth-of-type(5):before{ content: "Fecha"; }
+    #tablaCompras tbody td:nth-of-type(5):before{ content: "Cuantía"; }
+
+    #tablaAlquileres tbody td:nth-of-type(1):before{ content: "ID"; }
+    #tablaAlquileres tbody td:nth-of-type(2):before{ content: "Empleado"; }
+    #tablaAlquileres tbody td:nth-of-type(3):before{ content: "Cliente"; }
+    #tablaAlquileres tbody td:nth-of-type(4):before{ content: "Maquinaria"; }
+    #tablaAlquileres tbody td:nth-of-type(5):before{ content: "Fecha Inicio"; }
+    #tablaAlquileres tbody td:nth-of-type(6):before{ content: "Fecha Fin"; }
+    
+    
+    #tablaIncidencias tbody td:nth-of-type(1):before{ content: "ID"; }
+    #tablaIncidencias tbody td:nth-of-type(2):before{ content: "Maquinaria"; }
+    #tablaIncidencias tbody td:nth-of-type(3):before{ content: "Titulo"; }
+    #tablaIncidencias tbody td:nth-of-type(4):before{ content: "Descripción"; }
+    #tablaIncidencias tbody td:nth-of-type(5):before{ content: "Estado"; }
+    #tablaIncidencias tbody td:nth-of-type(6):before{ content: "Fecha"; }
+}
